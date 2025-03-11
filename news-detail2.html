@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายละเอียดข่าว</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 15px;
+        }
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            text-align: left;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        .back-link {
+            display: block;
+            margin-top: 100px;
+            color: #007bff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+                .video-container {
+            width: 80%; /* กำหนดความกว้างของวิดีโอ */
+            max-width: 800px; /* จำกัดขนาดสูงสุด */
+            margin: 20px auto; /* จัดให้อยู่ตรงกลาง */
+            text-align: center;
+        }
+
+        .video-container video {
+            width: 100%; /* ทำให้วิดีโอขยายเต็ม div */
+            border-radius: 10px; /* ทำให้มุมโค้ง */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้ดูมีมิติ */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>รายละเอียดข่าว</h1>
+    </header>
+
+    <div class="content">
+        <h2>ศิษย์ล้างครู!! ลูกศิษย์ใช้วิชากังฟูต่อสู้กับอาจารย์ในห้องเรียน</h2>
+        <p><strong>ผู้สื่อข่าว:</strong> เอสฟูจิวาระ คนส่งเต้าหู้แห่งเขาท่าเพรช</p>
+        <p>รายละเอียดข่าว: เหตุการณ์นี้เกิดขึ้นเมื่ออาจารย์ไม่ยอมให้เกรดวิชาโปรเจคกับลูกศิษย์ จึงเกิดการต่อสู้ โดยทั้ง 2 คนใช้วิชาวรยุทธ์กังฟูจากสำนักบั
+            งไคของอาจารย์โกโจ การต่อสู้ต่อเนื่องมา 3 วันแล้ว เกรดก็ยังไม่ได้...</p>
+        <img src="giorno.png" alt="ภาพประกอบข่าว">
+        <video width="640" height="360" controls>
+            <source src="ipman.mp4" type="video/mp4">
+            <source src="ipman.mp4" type="video/webm">
+            <p>เบราว์เซอร์ของคุณไม่รองรับวิดีโอ</p>
+        </video>
+        
+        <a href="news.html">กลับไปหน้าข่าว</a>
+    </div>
+</body>
+</html>

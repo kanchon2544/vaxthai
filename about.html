@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เมนู Dropdown</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header { background-color: #0056b3; color: white; text-align: center; padding: 20px; font-size: 24px; font-weight: bold; }
+        
+        /* เมนูหลัก */
+        .navbar {
+            background-color: #007bff;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            list-style: none;
+            margin: 0;
+        }
+        .navbar .nav-item {
+            position: relative;
+        }
+        .navbar .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            display: block;
+        }
+        .navbar .nav-link:hover {
+            background-color: #0056b3;
+            border-radius: 5px;
+        }
+
+        /* Dropdown */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 200px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+            top: 100%;
+            left: 0;
+            z-index: 100;
+        }
+        .dropdown-content a {
+            display: block;
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+            text-align: left;
+            font-size: 16px;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .nav-item:hover .dropdown-content {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>สำนักงานสรรพสามิตพื้นที่สุราษฎร์ธานี</header>
+
+    <ul class="navbar">
+        <li class="nav-item">
+            <a href="#" class="nav-link">หน้าหลัก</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">เกี่ยวกับสำนักงาน</a>
+            <ul class="dropdown-content">
+                <li><a href="#">ข้อมูลทั่วไป</a></li>
+                <li><a href="#">วิสัยทัศน์</a></li>
+                <li><a href="#">โครงสร้างองค์กร</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">ห้องข่าว</a>
+            <ul class="dropdown-content">
+                <li><a href="#">ข่าวประชาสัมพันธ์</a></li>
+                <li><a href="#">กิจกรรม</a></li>
+                <li><a href="#">ประกาศต่างๆ</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">งานของหน่วยงาน</a>
+            <ul class="dropdown-content">
+                <li><a href="#">งานด้านภาษี</a></li>
+                <li><a href="#">งานตรวจสอบ</a></li>
+                <li><a href="#">งานให้คำปรึกษา</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">ประชาชน/ผู้เสียภาษี</a>
+            <ul class="dropdown-content">
+                <li><a href="#">บริการสำหรับประชาชน</a></li>
+                <li><a href="#">ข้อมูลการเสียภาษี</a></li>
+                <li><a href="#">คำแนะนำ</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">บริการอิเล็กทรอนิกส์</a>
+            <ul class="dropdown-content">
+                <li><a href="#">ลงทะเบียนออนไลน์</a></li>
+                <li><a href="#">ชำระภาษีออนไลน์</a></li>
+                <li><a href="#">ดาวน์โหลดเอกสาร</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">ดาวน์โหลด</a>
+            <ul class="dropdown-content">
+                <li><a href="#">แบบฟอร์ม</a></li>
+                <li><a href="#">เอกสารแนะนำ</a></li>
+                <li><a href="#">โปรแกรมช่วยคำนวณ</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">ติดต่อสอบถาม</a>
+            <ul class="dropdown-content">
+                <li><a href="#">ที่ตั้งสำนักงาน</a></li>
+                <li><a href="#">เบอร์ติดต่อ</a></li>
+                <li><a href="#">ส่งข้อความ</a></li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+</html>

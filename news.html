@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ห้องข่าว</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header { background-color: #0056b3; color: white; text-align: center; padding: 20px; font-size: 24px; font-weight: bold; }
+        nav { background-color: #007bff; padding: 10px; text-align: center; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-size: 18px; padding: 10px; display: inline-block; }
+        nav a:hover { background-color: #0056b3; border-radius: 5px; }
+
+        /* สไตล์หลักของคอนเทนต์ */
+        .container { max-width: 800px; margin: auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); border-radius: 10px; }
+
+        /* สไตล์ของข่าว */
+        .news-item {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .news-item h3 { margin: 0 0 10px; color: #333; }
+        .news-item p { margin: 0 0 10px; color: #666; }
+        .news-item a { text-decoration: none; color: #007bff; font-weight: bold; }
+        .news-item a:hover { text-decoration: underline; }
+
+    </style>
+</head>
+<body>
+
+    <header>สำนักงานสรรพสามิตพื้นที่สุราษฎร์ธานี</header>
+    <nav>
+        <a href="index.html">หน้าหลัก</a>
+        <a href="news.html">ห้องข่าว</a>
+        <a href="contact.html">ติดต่อเรา</a>
+    </nav>
+
+    <div class="container">
+        <h2 style="text-align: center;">📰 ห้องข่าว</h2>
+        <p style="text-align: center; color: #666;">ข่าวประชาสัมพันธ์ล่าสุด</p>
+
+        <div class="news-item">
+            <h3>โครตกาก วัยรุ่น FiveM โดนกระทืบ เหตุเพราะบิดได้เงินแล้วเบี้ยว</h3>
+            <p>เหตุเพราะบิดได้เงินแล้วเบี้ยว เกิดที่ประเทศไทย ในจักรวาลทางช้างเผือก</p>
+            <p><a href="news-detail.html">อ่านต่อ →</a></p>
+        </div>
+
+        <div class="news-item">
+            <h3>ศิษย์ล้างครู!! ลูกศิษย์ใช้วิชากังฟูต่อสู้กับอาจารย์ในห้องเรียน</h3>
+            <p>เหตุการณ์นี้เกิดขึ้นเมื่ออาจารย์ไม่ยอมให้เกรดวิชาโปรเจคกับลูกศิษย์ จึงเกิดการต่อสู้</p>
+            <p><a href="news-detail2.html">อ่านต่อ →</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

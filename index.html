@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สำนักงานสรรพสามิตพื้นที่สุราษฎร์ธานี</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #007bff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav .nav-item {
+            display: inline-block;
+            position: relative;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 18px;
+            display: inline-block;
+            cursor: pointer;
+        }
+        nav a:hover {
+            background-color: #0056b3;
+        }
+
+        /* ====== Dropdown Menu Styles ====== */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 200px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+            text-align: left;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* ====== สไตล์ของสไลด์โชว์ ====== */
+        .carousel {
+            position: relative;
+            max-width: 800px;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .carousel img {
+            width: 100%;
+            display: none;
+        }
+        .carousel img.active {
+            display: block;
+            animation: fade 1s ease-in-out;
+        }
+        @keyframes fade {
+            from { opacity: 0.4; }
+            to { opacity: 1; }
+        }
+
+        .dots {
+            text-align: center;
+            padding: 10px;
+        }
+        .dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin: 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .dot.active {
+            background-color: #007bff;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>สำนักงานสรรพสามิตพื้นที่สุราษฎร์ธานี</h1>
+    </header>
+    <nav>
+        <div class="nav-item">
+            <a href="index.html">หน้าหลัก</a>
+        </div>
+
+        <div class="nav-item dropdown">
+            <a class="dropdown-btn">เกี่ยวกับสำนักงาน ▼</a>
+            <div class="dropdown-content">
+                <a href="history.html">ประวัติกรมสรรพสามิต</a>
+                <a href="structure.html">โครงสร้างองค์กร</a>
+                <a href="vision.html">วิสัยทัศน์และพันธกิจ</a>
+                <a href="policy.html">แผนยุทธศาสตร์</a>
+            </div>
+        </div>
+
+        <div class="nav-item dropdown">
+            <a class="dropdown-btn">ห้องข่าว ▼</a>
+            <div class="dropdown-content">
+                <a href="news.html">ข่าวประชาสัมพันธ์</a>
+                <a href="events.html">กิจกรรม</a>
+            </div>
+        </div>
+
+        <div class="nav-item dropdown">
+            <a class="dropdown-btn">งานของหน่วยงาน ▼</a>
+            <div class="dropdown-content">
+                <a href="projects.html">โครงการและภารกิจ</a>
+                <a href="laws.html">กฎหมายและระเบียบ</a>
+            </div>
+        </div>
+
+        <!-- เพิ่มหัวข้อที่ขาดหายไป -->
+        <div class="nav-item dropdown">
+            <a class="dropdown-btn">ประชาชน/ผู้เสียภาษี ▼</a>
+            <div class="dropdown-content">
+                <a href="tax.html">ข้อมูลภาษี</a>
+                <a href="payment.html">ช่องทางชำระภาษี</a>
+                <a href="complaints.html">ร้องเรียน/ข้อเสนอแนะ</a>
+            </div>
+        </div>
+
+        <div class="nav-item dropdown">
+            <a class="dropdown-btn">บริการอิเล็กทรอนิกส์ ▼</a>
+            <div class="dropdown-content">
+                <a href="online-reg.html">ลงทะเบียนออนไลน์</a>
+                <a href="e-payment.html">ชำระภาษีออนไลน์</a>
+            </div>
+        </div>
+
+        <div class="nav-item dropdown">
+            <a class="dropdown-btn">ดาวน์โหลด ▼</a>
+            <div class="dropdown-content">
+                <a href="forms.html">แบบฟอร์ม</a>
+                <a href="guides.html">คู่มือการใช้งาน</a>
+            </div>
+        </div>
+
+        <div class="nav-item">
+            <a href="contact.html">ติดต่อสอบถาม</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h2>ยินดีต้อนรับ</h2>
+        <p>นี่คือหน้าแรกของเว็บไซต์สำนักงานสรรพสามิต</p>
+
+        <!-- สไลด์โชว์ -->
+        <div class="carousel">
+            <img src="Jojo.jpg" class="active">
+            <img src="FF.jpg">
+            <img src="rich.jpg">
+        </div>
+
+        <!-- จุดแสดงสถานะสไลด์ -->
+        <div class="dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </div>
+
+    <script>
+        // ทำให้เมนู Dropdown เปิด-ปิดได้
+        document.addEventListener("DOMContentLoaded", function () {
+            let dropdowns = document.querySelectorAll(".dropdown");
+
+            dropdowns.forEach(function (dropdown) {
+                let btn = dropdown.querySelector(".dropdown-btn");
+                let menu = dropdown.querySelector(".dropdown-content");
+
+                btn.addEventListener("click", function (event) {
+                    event.stopPropagation(); 
+                    closeAllDropdowns();
+                    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+                });
+            });
+
+            document.addEventListener("click", function () {
+                closeAllDropdowns();
+            });
+
+            function closeAllDropdowns() {
+                document.querySelectorAll(".dropdown-content").forEach(function (menu) {
+                    menu.style.display = "none";
+                });
+            }
+        });
+
+        // สไลด์โชว์อัตโนมัติ
+        let slideIndex = 0;
+        const slides = document.querySelectorAll(".carousel img");
+        const dots = document.querySelectorAll(".dot");
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove("active");
+                dots[i].classList.remove("active");
+            });
+            slides[index].classList.add("active");
+            dots[index].classList.add("active");
+        }
+
+        function nextSlide() {
+            slideIndex = (slideIndex + 1) % slides.length;
+            showSlide(slideIndex);
+        }
+
+        function currentSlide(index) {
+            slideIndex = index;
+            showSlide(index);
+        }
+
+        setInterval(nextSlide, 3000); // เปลี่ยนภาพทุก 3 วินาที
+    </script>
+</body>
+</html>
