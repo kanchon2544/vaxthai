@@ -11,22 +11,51 @@
         nav a { color: white; text-decoration: none; margin: 0 15px; font-size: 18px; padding: 10px; display: inline-block; }
         nav a:hover { background-color: #0056b3; border-radius: 5px; }
 
-        /* สไตล์หลักของคอนเทนต์ */
+        /* คอนเทนต์หลัก */
         .container { max-width: 800px; margin: auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); border-radius: 10px; }
 
-        /* สไตล์ของข่าว */
+        /* สไตล์ข่าว */
         .news-item {
+            display: flex;
+            align-items: center;
             background: white;
             padding: 15px;
             margin-bottom: 15px;
             border-radius: 10px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
-        .news-item h3 { margin: 0 0 10px; color: #333; }
-        .news-item p { margin: 0 0 10px; color: #666; }
-        .news-item a { text-decoration: none; color: #007bff; font-weight: bold; }
-        .news-item a:hover { text-decoration: underline; }
 
+        .news-item img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .news-content {
+            flex: 1;
+        }
+
+        .news-content h3 {
+            margin: 0 0 10px;
+            color: #333;
+        }
+
+        .news-content p {
+            margin: 0 0 10px;
+            color: #666;
+        }
+
+        .news-content a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .news-content a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -43,17 +72,24 @@
         <p style="text-align: center; color: #666;">ข่าวประชาสัมพันธ์ล่าสุด</p>
 
         <div class="news-item">
-            <h3>โครตกาก วัยรุ่น FiveM โดนกระทืบ เหตุเพราะบิดได้เงินแล้วเบี้ยว</h3>
-            <p>เหตุเพราะบิดได้เงินแล้วเบี้ยว เกิดที่ประเทศไทย ในจักรวาลทางช้างเผือก</p>
-            <p><a href="news-detail.html">อ่านต่อ →</a></p>
+            <img src="img/fivem.jpg" alt="ข่าว FiveM">
+            <div class="news-content">
+                <h3>โครตกาก วัยรุ่น FiveM โดนกระทืบ เหตุเพราะบิดได้เงินแล้วเบี้ยว</h3>
+                <p>เหตุเพราะบิดได้เงินแล้วเบี้ยว เกิดที่ประเทศไทย ในจักรวาลทางช้างเผือก</p>
+                <p><a href="news-detail.html">อ่านต่อ →</a></p>
+            </div>
         </div>
 
         <div class="news-item">
-            <h3>ศิษย์ล้างครู!! ลูกศิษย์ใช้วิชากังฟูต่อสู้กับอาจารย์ในห้องเรียน</h3>
-            <p>เหตุการณ์นี้เกิดขึ้นเมื่ออาจารย์ไม่ยอมให้เกรดวิชาโปรเจคกับลูกศิษย์ จึงเกิดการต่อสู้</p>
-            <p><a href="news-detail2.html">อ่านต่อ →</a></p>
+            <img src="img/fight.jpg" alt="ข่าวนักเรียนต่อยครู">
+            <div class="news-content">
+                <h3>ศิษย์ล้างครู!! ลูกศิษย์ใช้วิชากังฟูต่อสู้กับอาจารย์ในห้องเรียน</h3>
+                <p>เหตุการณ์นี้เกิดขึ้นเมื่ออาจารย์ไม่ยอมให้เกรดวิชาโปรเจคกับลูกศิษย์ จึงเกิดการต่อสู้</p>
+                <p><a href="news-detail2.html">อ่านต่อ →</a></p>
+            </div>
         </div>
     </div>
 
 </body>
 </html>
+
